@@ -1,4 +1,49 @@
-const data = {
+export interface Pizza {
+  title: string;
+  ingredients: string[];
+}
+
+export interface Burger {
+  title: string;
+  price: {
+    menu: number;
+    noMenu: number;
+  };
+}
+
+export interface Salad {
+  title: string;
+  ingredients: string[];
+}
+
+export interface SalladRoll {
+  title: string;
+  ingredients: string[];
+}
+
+export interface Pasta {
+  title: string;
+  ingredients: string[];
+}
+
+export interface Kebab {
+  title: string;
+  ingredients: string[];
+  price: number;
+}
+
+export interface MenuData {
+  [key: string]: {
+    title: string;
+    pizzas?: Pizza[];
+    hamburgare?: Burger[];
+    sallader?: Salad[];
+    salladrullar?: SalladRoll[];
+    pastas?: Pasta[];
+    kebabs?: Kebab[];
+  };
+}
+const data: MenuData = {
   pizzaclass1: {
     title: "Prisklass 1 - 109kr - M 188 - L 262",
     pizzas: [
@@ -469,7 +514,7 @@ const data = {
   hamburgare: {
     title: "Hamburgare",
 
-    hambugar: [
+    hamburgare: [
       {
         title: "Hambugare 90 gr",
         price: {
