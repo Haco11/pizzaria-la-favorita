@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import data, {
   MenuData,
   Pizza,
@@ -10,108 +10,107 @@ import data, {
 } from "../data";
 
 const Menu: React.FC = () => {
+  const [currentCategory, setCurrentCategory] = useState<string | null>(null);
+
+  const handleCategoryChange = (category: string) => {
+    setCurrentCategory(category === currentCategory ? null : category);
+  };
+
   return (
     <div>
       <h1>Menu</h1>
 
-      {/* Pizzas */}
-      <section>
-        <h2>Pizzas</h2>
-        {Object.keys(data)?.map((categoryKey) => {
-          const category = data[categoryKey as keyof MenuData];
-          if (category.pizzas) {
-            return (
-              <div key={categoryKey}>
-                <h3>{category.title}</h3>
+      {/* Category buttons */}
+      <div>
+        <button onClick={() => handleCategoryChange("pizza")}>Pizzas</button>
+        <button onClick={() => handleCategoryChange("hamburgare")}>
+          Hamburgers
+        </button>
+        <button onClick={() => handleCategoryChange("sallad")}>Salads</button>
+        <button onClick={() => handleCategoryChange("salladrull")}>
+          Sallad Rolls
+        </button>
+        <button onClick={() => handleCategoryChange("pasta")}>Pasta</button>
+        <button onClick={() => handleCategoryChange("kebab")}>Kebabs</button>
+        <button onClick={() => handleCategoryChange("")}>Show All</button>
+      </div>
+
+      {/* Menu items */}
+      {Object.keys(data)?.map((categoryKey) => {
+        const category = data[categoryKey as keyof MenuData];
+        if (
+          !currentCategory ||
+          (currentCategory === "pizza" && category.pizzas) ||
+          currentCategory === categoryKey
+        ) {
+          return (
+            <section key={categoryKey}>
+              <h2>{category.title}</h2>
+              {category.pizzas && category.pizzas.length > 0 && (
+                <div key={categoryKey}>
+                  <ul>
+                    {category.pizzas?.map((pizza: Pizza, index: number) => (
+                      <li key={index}>
+                        {pizza.title} - {pizza.ingredients.join(", ")}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+              {category.hamburgare && category.hamburgare.length > 0 && (
                 <ul>
-                  {category.pizzas?.map((pizza: Pizza, index: number) => (
+                  {category.hamburgare?.map((burger: Burger, index: number) => (
                     <li key={index}>
-                      {pizza.title} - {pizza.ingredients.join(", ")}
+                      {burger.title} - Menu: {burger.price.menu} kr, No Menu:{" "}
+                      {burger.price.noMenu} kr
                     </li>
                   ))}
                 </ul>
-              </div>
-            );
-          }
-          return null;
-        })}
-      </section>
-
-      {/* Hamburgers */}
-      <section>
-        <h2>Hamburgers</h2>
-        {data.hamburgare && (
-          <ul>
-            {data.hamburgare.hamburgare?.map(
-              (burger: Burger, index: number) => (
-                <li key={index}>
-                  {burger.title} - Menu: {burger.price.menu} kr, No Menu:{" "}
-                  {burger.price.noMenu} kr
-                </li>
-              )
-            )}
-          </ul>
-        )}
-      </section>
-
-      {/* Salads */}
-      <section>
-        <h2>Salads</h2>
-        {data.sallad && (
-          <ul>
-            {data.sallad.sallader?.map((salad: Salad, index: number) => (
-              <li key={index}>
-                {salad.title} - {salad.ingredients.join(", ")}
-              </li>
-            ))}
-          </ul>
-        )}
-      </section>
-
-      {/* Sallad Rolls */}
-      <section>
-        <h2>Sallad Rolls</h2>
-        {data.salladrull && (
-          <ul>
-            {data.salladrull.salladrullar?.map(
-              (salladRull: SalladRoll, index: number) => (
-                <li key={index}>
-                  {salladRull.title} - {salladRull.ingredients.join(", ")}
-                </li>
-              )
-            )}
-          </ul>
-        )}
-      </section>
-
-      {/* Pasta */}
-      <section>
-        <h2>Pasta</h2>
-        {data.pasta && (
-          <ul>
-            {data.pasta.pastas?.map((pasta: Pasta, index: number) => (
-              <li key={index}>
-                {pasta.title} - {pasta.ingredients.join(", ")}
-              </li>
-            ))}
-          </ul>
-        )}
-      </section>
-
-      {/* Kebabs */}
-      <section>
-        <h2>Kebabs</h2>
-        {data.kebab && (
-          <ul>
-            {data.kebab.kebabs?.map((kebab: Kebab, index: number) => (
-              <li key={index}>
-                {kebab.title} - {kebab.ingredients.join(", ")} - {kebab.price}{" "}
-                kr
-              </li>
-            ))}
-          </ul>
-        )}
-      </section>
+              )}
+              {category.sallader && category.sallader.length > 0 && (
+                <ul>
+                  {category.sallader?.map((salad: Salad, index: number) => (
+                    <li key={index}>
+                      {salad.title} - {salad.ingredients.join(", ")}
+                    </li>
+                  ))}
+                </ul>
+              )}
+              {category.salladrullar && category.salladrullar.length > 0 && (
+                <ul>
+                  {category.salladrullar?.map(
+                    (salladRull: SalladRoll, index: number) => (
+                      <li key={index}>
+                        {salladRull.title} - {salladRull.ingredients.join(", ")}
+                      </li>
+                    )
+                  )}
+                </ul>
+              )}
+              {category.pastas && category.pastas.length > 0 && (
+                <ul>
+                  {category.pastas?.map((pasta: Pasta, index: number) => (
+                    <li key={index}>
+                      {pasta.title} - {pasta.ingredients.join(", ")}
+                    </li>
+                  ))}
+                </ul>
+              )}
+              {category.kebabs && category.kebabs.length > 0 && (
+                <ul>
+                  {category.kebabs?.map((kebab: Kebab, index: number) => (
+                    <li key={index}>
+                      {kebab.title} - {kebab.ingredients.join(", ")} -{" "}
+                      {kebab.price} kr
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </section>
+          );
+        }
+        return null;
+      })}
     </div>
   );
 };
