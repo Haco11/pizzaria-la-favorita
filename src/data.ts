@@ -120,6 +120,140 @@ const data = {
           "Ananas",
         ],
       },
+      {
+        title: "Al Capone",
+        ingredients: ["Skinka", "Salami", "Lök"],
+      },
+      {
+        title: "Italia",
+        ingredients: ["Skinka", "Gorgonzolaost", "Färska tomater"],
+      },
+      {
+        title: "Bäck Special",
+        ingredients: ["Skinka", "Räkor", "Champinjoner"],
+      },
+      {
+        title: "Quattro Stagioni",
+        ingredients: [
+          "Skinka",
+          "Räkor",
+          "Champinjoner",
+          "kronärtskocka",
+          "Oliver",
+          "Musslor",
+        ],
+      },
+      {
+        title: "Pepperoni Special",
+        ingredients: ["Pepperonikorv", "Lök", "Paprika", "Tomater"],
+      },
+      {
+        title: "Amore",
+        ingredients: ["Skinka", "Jordnötter", "Banan", "Curry", "Ananas"],
+      },
+      {
+        title: "Romana",
+        ingredients: [
+          "Champinjoner",
+          "Bacon",
+          "Lök",
+          "Feferoni",
+          "Stark krydda",
+        ],
+      },
+      {
+        title: "Zolti",
+        ingredients: ["Skinka", "Bacon", "Champinjoner", "Lök", "Paprika"],
+      },
+      {
+        title: "La Favorita",
+        ingredients: ["Köttfärssås", "Salami", "Specialkrydda (Stark)", "Lök"],
+      },
+      {
+        title: "Fårostpizza",
+        ingredients: ["Fårost", "Salami", "Ägg", "Färska tomater", "Oliver"],
+      },
+      {
+        title: "Åsen",
+        ingredients: [
+          "Köttfärssås",
+          "Salami",
+          "Vitlök",
+          "Feferoni",
+          "Kryddmix",
+          "Gräddfil",
+        ],
+      },
+      {
+        title: "Calzone Special",
+        ingredients: ["(inbakad) Skinka", "Räkor", "Champinjoner"],
+      },
+      {
+        title: "Kyckling pizza",
+        ingredients: ["Kyckling", "Banan", "Ananas", "Curry"],
+      },
+      {
+        title: "Torpedo",
+        ingredients: ["Pepperonikorv", "Ägg", "Champinjoner"],
+      },
+      {
+        title: "Positana",
+        ingredients: [
+          "Skinka",
+          "Räkor",
+          "Champinjoner",
+          "Lök",
+          "Sparris",
+          "Kronärtskocka",
+        ],
+      },
+    ],
+  },
+  pizzaclass4: {
+    pizzas: [
+      {
+        title: "Le Chef",
+        ingredients: [
+          "Mozzarella",
+          "Lufttorkad skinka",
+          "Tomater",
+          "Champinjoner",
+          "Oliver",
+          "Svartpeppar",
+        ],
+      },
+      {
+        title: "Parma",
+        ingredients: [
+          "Mozzarella",
+          "Lufttorkad skinka",
+          "Salami",
+          "Ruccola",
+          "Fårost",
+        ],
+      },
+      {
+        title: "Ruccola",
+        ingredients: [
+          "Mozzarella",
+          "Lufttorkade skinka",
+          "Salami",
+          "Ruccola",
+          "Riven ost",
+        ],
+      },
+      {
+        title: "Tefat",
+        ingredients: [
+          "(inbakad, dubbeldeg) Skinka",
+          "Räkor",
+          "Riven ost",
+          "Ruccola",
+        ],
+      },
+      {
+        //continue
+      },
     ],
   },
 };
