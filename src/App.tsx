@@ -1,7 +1,12 @@
 import "./App.scss";
+import Menu from "./components/Menu";
 
 function App() {
-  return <main>hello</main>;
+  return (
+    <main>
+      <Menu />
+    </main>
+  );
 }
 
 export default App;
