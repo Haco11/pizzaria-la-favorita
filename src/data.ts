@@ -252,7 +252,445 @@ const data = {
         ],
       },
       {
-        //continue
+        title: "Italiano",
+        ingredients: [
+          "Mozzarella",
+          "Lufttorkad skinka",
+          "Ruccola",
+          "Soltorkade tomater",
+          "Riven ost",
+          "Purjolök",
+        ],
+      },
+      {
+        title: "Trädgårdsmästarens",
+        ingredients: [
+          "Aubergine",
+          "Zucchini",
+          "Champinjoner",
+          "Paprika",
+          "Soltorkade tomater",
+          "Basilika",
+        ],
+      },
+      {
+        title: "Bagarens Special",
+        ingredients: [
+          "Mozzerella",
+          "Tomater",
+          "Lök",
+          "Feferoni",
+          "Oliver",
+          "Salami",
+          "Ruccola",
+        ],
+      },
+      {
+        title: "Picasso",
+        ingredients: [
+          "Mozzarella",
+          "Ruccola",
+          "Soltorkade tomater",
+          "Paprika",
+          "Purjolök",
+          "Fårost",
+        ],
+      },
+      {
+        title: "Mezzaluna",
+        ingredients: [
+          "(halvinbakad) öppen del:",
+          "Mozzarella",
+          "Lufttorkad skinka",
+          "Basilika",
+          "Inbakade delen: Skinka",
+        ],
+      },
+      {
+        title: "Santa Maria",
+        ingredients: [
+          "Fläskfilé",
+          "Mozzarella",
+          "Gorgonzola",
+          "Tomater",
+          "Bearnaisesås",
+        ],
+      },
+      {
+        title: "Mama Mia",
+        ingredients: [
+          "Oxfilé",
+          "Chaminjoner",
+          "Tomater",
+          "Paprika",
+          "Lök",
+          "Bearnaisesås",
+        ],
+      },
+      {
+        title: "Husets Special",
+        ingredients: ["Oxfile", "Tomater", "Feferoni", "Bearnaisesås", "Lök"],
+      },
+      {
+        title: "Oxfile",
+        ingredients: ["Oxfile", "Tomater", "Feferoni", "Bearnaisesås", "Lök"],
+      },
+      {
+        title: "Mozzarella",
+        ingredients: [
+          "Skinka",
+          "Mozzarella",
+          "Tomater",
+          "Champinjoner",
+          "Salami",
+        ],
+      },
+      {
+        title: "Belladona",
+        ingredients: [
+          "Tomater",
+          "Champinjoner",
+          "Lök",
+          "Qournfärs",
+          "Bearnaisesås",
+        ],
+      },
+      {
+        title: "Quattro Formaggi",
+        ingredients: ["Mozzarella", "Fårost", "Gorgonzola", "Basillika"],
+      },
+      {
+        title: "Ubåt Special",
+        ingredients: [
+          "Champinjoner",
+          "Oxfile",
+          "Gorgonzola",
+          "Bearnaisesås (halvinbakad)",
+        ],
+      },
+      {
+        title: "Havets Pärlor",
+        ingredients: [
+          "Champinjoner",
+          "Görna musslor",
+          "Räkor",
+          "Vitlök",
+          "Basillika",
+        ],
+      },
+      {
+        title: "Avokado pizza",
+        ingredients: [
+          "Avokado",
+          "Champinjoner",
+          "Paprika",
+          "Vitlök",
+          "Tomater",
+          "Basillika",
+          "Sparis",
+        ],
+      },
+    ],
+  },
+  pizzaMexikan: {
+    pizzas: [
+      {
+        title: "Acapulco",
+        ingredients: [
+          "Oxfilé",
+          "Champinjoner",
+          "Taco kryddmix",
+          "Vitlök",
+          "Tacosås",
+          "Jalapeno",
+          "Lök",
+          "Bearnaisesås",
+        ],
+      },
+      {
+        title: "Den onde",
+        ingredients: [
+          "Fläskfilé",
+          "Jalapeno",
+          "Lök",
+          "Tacosås",
+          "Taco kryddmix",
+          "Paprika",
+          "Tomater",
+          "Bearnaisesås",
+        ],
+      },
+      {
+        title: "Den gode",
+        ingredients: [
+          "Kyckling",
+          "Jalapeno",
+          "Curry",
+          "Tacosås",
+          "Taco kryddmix",
+          "Paprika",
+          "Bearnaisesås",
+        ],
+      },
+      {
+        title: "Mexicana",
+        ingredients: [
+          "Köttfärssås",
+          "Jalapeno",
+          "Tacosås",
+          "Taco kryddmix",
+          "Lök",
+          "Vitlök",
+        ],
+      },
+      {
+        title: "Azteka",
+        ingredients: [
+          "Skinka",
+          "Taco kryddmix",
+          "Tacosås",
+          "Jalapeno",
+          "Gräddfil",
+        ],
+      },
+    ],
+  },
+  hamburgare: {
+    hambugar: [
+      {
+        title: "Hambugare 90 gr",
+        ingredients: ["Meny", "Bröd"],
+        price: {
+          menu: 95,
+          noMenu: 70,
+        },
+      },
+      {
+        title: "Hamburgare 150 gr",
+        ingredients: ["Meny", "Bröd"],
+        price: {
+          menu: 95,
+          noMenu: 70,
+        },
+      },
+    ],
+  },
+  sallad: {
+    sallader: [
+      {
+        title: "Västkustsallad",
+        ingredients: [
+          "Ost",
+          "Räkor",
+          "Tonfisk",
+          "Musslor",
+          "Tonfisk",
+          "Majs",
+          "Citron",
+        ],
+      },
+      {
+        title: "Tonfisksallad",
+        ingredients: ["Tonfisk", "Ost", "Lök", "Majs", "Citron"],
+      },
+      {
+        title: "Ost & Skinskallad",
+        ingredients: ["Ost", "Skinka", "Majs", "Ananas"],
+      },
+      {
+        title: "Räksallad",
+        ingredients: ["Räkor", "Ost", "Ägg", "Majs", "Citron"],
+      },
+      {
+        title: "Kycklingsallad",
+        ingredients: ["Kyckling", "Ost", "Majs", "Ananas"],
+      },
+      {
+        title: "Vegetarisk sallad",
+        ingredients: [
+          "Lök",
+          "Majs",
+          "Oliver",
+          "Champinjoner",
+          "Paprika",
+          "Kronärtskocka",
+        ],
+      },
+      {
+        title: "Grekisk sallad",
+        ingredients: ["Fårost", "Oliver", "Lök", "Feferoni", "Paprika"],
+      },
+      {
+        title: "Ceasarsallad",
+        ingredients: [
+          "Kyckling",
+          "Oliver",
+          "Paprika",
+          "Solttorkade tomater",
+          "Rödlök",
+          "Krutonger",
+          "feferoni",
+        ],
+      },
+      {
+        title: "Parmasallad",
+        ingredients: [
+          "Parma",
+          "Mozzerella",
+          "Oliver",
+          "Paprika",
+          "Solttorkade tomater",
+          "Rödlök",
+          "Ruccola",
+          "feferoni",
+        ],
+      },
+      {
+        title: "Avokadosallad",
+        ingredients: ["Avokado", "Ost", "Majs", "Räkor", "Ägg", "Skinka"],
+      },
+      {
+        title: "Kebabsallad",
+        ingredients: ["Kebabkött", "Ost", "Feferoni", "Vitlökssås & rödsås"],
+      },
+      {
+        title: "Falafelsallad",
+        ingredients: [
+          "Falafel",
+          "Ost",
+          "Feferoni",
+          "Vitlökssås & rödsås",
+          "Lök",
+        ],
+      },
+    ],
+  },
+  salladrull: {
+    salladrullar: [
+      {
+        title: "Avokadorulle",
+        ingredients: ["Avokado", "Ost", "Majs", "Räkor", "Ägg", "Skinka"],
+      },
+      {
+        title: "Ost & Skinkrulle",
+        ingredients: ["Skinska", "Ost", "Majs", "Ananas", "Ägg"],
+      },
+      {
+        title: "Kycklingrulle",
+        ingredients: ["Kyckling", "Ost", "Majs", "Ananas"],
+      },
+      {
+        title: "Räkrulle",
+        ingredients: ["Räkor", "Ost", "Ägg", "Majs", "Ananas"],
+      },
+    ],
+  },
+  pasta: {
+    pastas: [
+      {
+        title: "Lasagne al Forno",
+        ingredients: ["Med riven ost (Valfri)"],
+      },
+      {
+        title: "Pasta Bolognese",
+        ingredients: ["Pasta", "Köttfärssås"],
+      },
+      {
+        title: "Pasta Carbonara",
+        ingredients: [
+          "Bacon",
+          "Lök",
+          "Äggula",
+          "Parmesan",
+          "Grädde",
+          "Champinjoner",
+        ],
+      },
+      {
+        title: "Kycklingpasta",
+        ingredients: [
+          "Kyckling",
+          "Broccoli",
+          "Pesto",
+          "Champinjoner",
+          "Grädde",
+        ],
+      },
+      {
+        title: "Oxfilépasta",
+        ingredients: ["Oxfilé", "Champinjoner", "Purjolök", "Paprika"],
+      },
+    ],
+  },
+  kebab: {
+    kebabs: [
+      {
+        title: "Kebab Pizza",
+        ingredients: ["Kebabkött", "Lök", "Feferoni", "Tomater"],
+        price: 129,
+      },
+      {
+        title: "Kebab eller Falafel med bröd",
+        ingredients: [""],
+        price: 95,
+      },
+      {
+        title: "Kebab eller Falafelrulle",
+        ingredients: [""],
+        price: 119,
+      },
+      {
+        title: "Kebab eller Falafeltallrik",
+        ingredients: ["Med ris eller pommes"],
+        price: 129,
+      },
+      {
+        title: "Kebab Alexander",
+        ingredients: [""],
+        price: 129,
+      },
+      {
+        title: "Viking kebab",
+        ingredients: [
+          "(inbakad) Kebabkött",
+          "Rödlök",
+          "Tomater",
+          "Isbergssallad",
+          "Gurka",
+          "Pepperoni",
+          "Vitlöksås & rödsås",
+          "(grönsaker tillsätts efter gräddning)",
+        ],
+        price: 139,
+      },
+      {
+        title: "Del Solo",
+        ingredients: [
+          "Kebabkött",
+          "Rödlök",
+          "Tomater",
+          "Isbergssallad",
+          "Gurka",
+          "Pepperoni",
+          "Vitlöksås & rödsås",
+          "(grönsaker tillsätts efter gräddning)",
+        ],
+        price: 139,
+      },
+      {
+        title: "Kebab pizza special",
+        ingredients: [
+          "Kebabkött",
+          "Pommes frites",
+          "Rödlök",
+          "Tomater",
+          "Isbergssallad",
+          "Gurka",
+          "Feferoni",
+          "Vitlöksås & rödsås",
+          "(grönsaker tillsätts efter gräddning)",
+        ],
+        price: 149,
       },
     ],
   },
