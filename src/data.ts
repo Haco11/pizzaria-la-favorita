@@ -1,5 +1,6 @@
 const data = {
   pizzaclass1: {
+    title: "Prisklass 1 - 109kr - M 188 - L 262",
     pizzas: [
       {
         title: "Vesuvio",
@@ -16,6 +17,8 @@ const data = {
     ],
   },
   pizzaclass2: {
+    title: "Prisklass 2 - 119kr - M 209 - L 279",
+
     pizzas: [
       {
         title: "Räkpizza",
@@ -80,6 +83,8 @@ const data = {
     ],
   },
   pizzaamerika: {
+    title: "Amerikanska pan pizzor - 139kr - M 229 - L 299",
+
     pizzas: [
       {
         title: "Honululu",
@@ -100,6 +105,8 @@ const data = {
     ],
   },
   pizzaclass3: {
+    title: "Prisklass 3 - 129kr - M 219 - L 289",
+
     pizzas: [
       {
         title: "Primavera",
@@ -210,6 +217,8 @@ const data = {
     ],
   },
   pizzaclass4: {
+    title: "Prisklass 4 - 139kr - M 229 - L 299",
+
     pizzas: [
       {
         title: "Le Chef",
@@ -393,6 +402,8 @@ const data = {
     ],
   },
   pizzaMexikan: {
+    title: "Mexikansk pizza - 139",
+
     pizzas: [
       {
         title: "Acapulco",
@@ -456,10 +467,11 @@ const data = {
     ],
   },
   hamburgare: {
+    title: "Hamburgare",
+
     hambugar: [
       {
         title: "Hambugare 90 gr",
-        ingredients: ["Meny", "Bröd"],
         price: {
           menu: 95,
           noMenu: 70,
@@ -467,7 +479,6 @@ const data = {
       },
       {
         title: "Hamburgare 150 gr",
-        ingredients: ["Meny", "Bröd"],
         price: {
           menu: 95,
           noMenu: 70,
@@ -476,6 +487,8 @@ const data = {
     ],
   },
   sallad: {
+    title: "Sallader - 129",
+
     sallader: [
       {
         title: "Västkustsallad",
@@ -566,6 +579,8 @@ const data = {
     ],
   },
   salladrull: {
+    title: "Salladrullar - 129",
+
     salladrullar: [
       {
         title: "Avokadorulle",
@@ -573,7 +588,7 @@ const data = {
       },
       {
         title: "Ost & Skinkrulle",
-        ingredients: ["Skinska", "Ost", "Majs", "Ananas", "Ägg"],
+        ingredients: ["Skinka", "Ost", "Majs", "Ananas", "Ägg"],
       },
       {
         title: "Kycklingrulle",
@@ -586,6 +601,8 @@ const data = {
     ],
   },
   pasta: {
+    title: "Pasta - 129",
+
     pastas: [
       {
         title: "Lasagne al Forno",
@@ -623,6 +640,8 @@ const data = {
     ],
   },
   kebab: {
+    title: "Kebabrätter alt.Kycklingkebab",
+
     kebabs: [
       {
         title: "Kebab Pizza",
@@ -695,3 +714,4 @@ const data = {
     ],
   },
 };
+export default data;
