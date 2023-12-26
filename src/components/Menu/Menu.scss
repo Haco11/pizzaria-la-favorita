@@ -20,7 +20,13 @@ $grayColor: #888;
     padding: 1.25rem;
     border-radius: 5px;
   }
-
+  &-filter {
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
   section {
     margin-bottom: 30px;
 
@@ -50,7 +56,11 @@ $grayColor: #888;
         .item-ingredients {
           color: $grayColor;
           font-size: 0.85rem;
-          max-width: 30px;
+          max-width: 110px;
+        }
+        .burger-ingredients {
+          color: $grayColor;
+          font-size: 0.85rem;
         }
       }
     }

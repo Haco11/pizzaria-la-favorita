@@ -7,7 +7,7 @@ import data, {
   SalladRoll,
   Pasta,
   Kebab,
-} from "../data";
+} from "../../data";
 import "./Menu.scss";
 
 const Menu: React.FC = () => {
@@ -20,18 +20,18 @@ const Menu: React.FC = () => {
   return (
     <div className="menu">
       {/* Category buttons */}
-      <div>
+      <div className="menu-filter">
         <button onClick={() => handleCategoryChange("pizza")}>Pizzas</button>
         <button onClick={() => handleCategoryChange("hamburgare")}>
-          Hamburgers
+          Hamburgare
         </button>
-        <button onClick={() => handleCategoryChange("sallad")}>Salads</button>
+        <button onClick={() => handleCategoryChange("sallad")}>Sallad</button>
         <button onClick={() => handleCategoryChange("salladrull")}>
-          Sallad Rolls
+          Sallad Rulle
         </button>
         <button onClick={() => handleCategoryChange("pasta")}>Pasta</button>
-        <button onClick={() => handleCategoryChange("kebab")}>Kebabs</button>
-        <button onClick={() => handleCategoryChange("")}>Show All</button>
+        <button onClick={() => handleCategoryChange("kebab")}>Kebab</button>
+        <button onClick={() => handleCategoryChange("")}>Alla</button>
       </div>
 
       {/* Menu items */}
@@ -62,50 +62,64 @@ const Menu: React.FC = () => {
                 </div>
               )}
               {category.hamburgare && category.hamburgare.length > 0 && (
-                <ul>
+                <ul className="item-list">
                   {category.hamburgare?.map((burger: Burger, index: number) => (
                     <li key={index}>
-                      {burger.title} - Menu: {burger.price.menu} kr, No Menu:{" "}
-                      {burger.price.noMenu} kr
+                      <div className="item-title">{burger.title}</div>
+                      <div className="burger-ingredients">
+                        Meny: {burger.price.menu}:-, Bröd: {burger.price.noMenu}
+                        :-
+                      </div>
                     </li>
                   ))}
                 </ul>
               )}
               {category.sallader && category.sallader.length > 0 && (
-                <ul>
+                <ul className="item-list">
                   {category.sallader?.map((salad: Salad, index: number) => (
                     <li key={index}>
-                      {salad.title} - {salad.ingredients.join(", ")}
+                      <div className="item-title">{salad.title}</div>
+                      <div className="item-ingredients">
+                        {salad.ingredients.join(", ")}
+                      </div>
                     </li>
                   ))}
                 </ul>
               )}
               {category.salladrullar && category.salladrullar.length > 0 && (
-                <ul>
+                <ul className="item-list">
                   {category.salladrullar?.map(
                     (salladRull: SalladRoll, index: number) => (
                       <li key={index}>
-                        {salladRull.title} - {salladRull.ingredients.join(", ")}
+                        <div className="item-title">{salladRull.title}</div>
+                        <div className="item-ingredients">
+                          {salladRull.ingredients.join(", ")}
+                        </div>
                       </li>
                     )
                   )}
                 </ul>
               )}
               {category.pastas && category.pastas.length > 0 && (
-                <ul>
+                <ul className="item-list">
                   {category.pastas?.map((pasta: Pasta, index: number) => (
                     <li key={index}>
-                      {pasta.title} - {pasta.ingredients.join(", ")}
+                      <div className="item-title">{pasta.title}</div>
+                      <div className="item-ingredients">
+                        {pasta.ingredients.join(", ")}
+                      </div>
                     </li>
                   ))}
                 </ul>
               )}
               {category.kebabs && category.kebabs.length > 0 && (
-                <ul>
+                <ul className="item-list">
                   {category.kebabs?.map((kebab: Kebab, index: number) => (
                     <li key={index}>
-                      {kebab.title} - {kebab.ingredients.join(", ")} -{" "}
-                      {kebab.price} kr
+                      <div className="item-title">{kebab.title}</div>
+                      <div className="item-ingredients">
+                        {kebab.ingredients.join(", ")} {kebab.price}:-
+                      </div>
                     </li>
                   ))}
                 </ul>
