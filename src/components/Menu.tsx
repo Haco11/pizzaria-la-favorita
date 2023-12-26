@@ -8,6 +8,7 @@ import data, {
   Pasta,
   Kebab,
 } from "../data";
+import "./Menu.scss";
 
 const Menu: React.FC = () => {
   const [currentCategory, setCurrentCategory] = useState<string | null>(null);
@@ -17,9 +18,7 @@ const Menu: React.FC = () => {
   };
 
   return (
-    <div>
-      <h1>Menu</h1>
-
+    <div className="menu">
       {/* Category buttons */}
       <div>
         <button onClick={() => handleCategoryChange("pizza")}>Pizzas</button>
@@ -48,10 +47,13 @@ const Menu: React.FC = () => {
               <h2>{category.title}</h2>
               {category.pizzas && category.pizzas.length > 0 && (
                 <div key={categoryKey}>
-                  <ul>
+                  <ul className="item-list">
                     {category.pizzas?.map((pizza: Pizza, index: number) => (
                       <li key={index}>
-                        {pizza.title} - {pizza.ingredients.join(", ")}
+                        <div className="item-title">{pizza.title}</div>
+                        <div className="item-ingredients">
+                          {pizza.ingredients.join(", ")}
+                        </div>
                       </li>
                     ))}
                   </ul>

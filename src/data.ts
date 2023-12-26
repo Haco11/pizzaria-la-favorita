@@ -53,7 +53,7 @@ const data: MenuData = {
       },
       {
         title: "Margherita",
-        ingredients: [""],
+        ingredients: ["Ost"],
       },
       {
         title: "Al Fungi",
