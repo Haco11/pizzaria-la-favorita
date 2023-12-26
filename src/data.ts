@@ -45,7 +45,7 @@ export interface MenuData {
 }
 const data: MenuData = {
   pizzaclass1: {
-    title: "Prisklass 1 - 109kr - M 188 - L 262",
+    title: "Prisklass 1 - 109:-  M 188:- L 262:-",
     pizzas: [
       {
         title: "Vesuvio",
@@ -62,7 +62,7 @@ const data: MenuData = {
     ],
   },
   pizzaclass2: {
-    title: "Prisklass 2 - 119kr - M 209 - L 279",
+    title: "Prisklass 2 - 119:- M 209:- L 279:-",
 
     pizzas: [
       {
@@ -128,7 +128,7 @@ const data: MenuData = {
     ],
   },
   pizzaamerika: {
-    title: "Amerikanska pan pizzor - 139kr - M 229 - L 299",
+    title: "Amerikanska pan pizzor - 139:- M 229:- L 299:-",
 
     pizzas: [
       {
@@ -150,7 +150,7 @@ const data: MenuData = {
     ],
   },
   pizzaclass3: {
-    title: "Prisklass 3 - 129kr - M 219 - L 289",
+    title: "Prisklass 3 - 129:- M 219:- L 289:-",
 
     pizzas: [
       {
@@ -262,7 +262,7 @@ const data: MenuData = {
     ],
   },
   pizzaclass4: {
-    title: "Prisklass 4 - 139kr - M 229 - L 299",
+    title: "Prisklass 4 - 139:- M 229:- L 299:-",
 
     pizzas: [
       {
@@ -447,7 +447,7 @@ const data: MenuData = {
     ],
   },
   pizzaMexikan: {
-    title: "Mexikansk pizza - 139",
+    title: "Mexikansk pizza - 139:-",
 
     pizzas: [
       {
@@ -525,14 +525,14 @@ const data: MenuData = {
       {
         title: "Hamburgare 150 gr",
         price: {
-          menu: 95,
-          noMenu: 70,
+          menu: 119,
+          noMenu: 90,
         },
       },
     ],
   },
   sallad: {
-    title: "Sallader - 129",
+    title: "Sallader - 129:-",
 
     sallader: [
       {
@@ -624,7 +624,7 @@ const data: MenuData = {
     ],
   },
   salladrull: {
-    title: "Salladrullar - 129",
+    title: "Salladrullar - 129:-",
 
     salladrullar: [
       {
@@ -646,7 +646,7 @@ const data: MenuData = {
     ],
   },
   pasta: {
-    title: "Pasta - 129",
+    title: "Pasta - 129:-",
 
     pastas: [
       {
