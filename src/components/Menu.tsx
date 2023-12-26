@@ -44,7 +44,9 @@ const Menu: React.FC = () => {
         ) {
           return (
             <section key={categoryKey}>
-              <h2>{category.title}</h2>
+              <div className="menu-title">
+                <h4>{category.title}</h4>
+              </div>
               {category.pizzas && category.pizzas.length > 0 && (
                 <div key={categoryKey}>
                   <ul className="item-list">

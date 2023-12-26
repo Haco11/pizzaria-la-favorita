@@ -3,6 +3,7 @@
 $primaryColor: #3498db;
 $secondaryColor: #2ecc71;
 $thirdColor: #121619;
+$whiteColor: #fff;
 $grayColor: #888;
 
 .menu {
@@ -10,27 +11,18 @@ $grayColor: #888;
   margin: 0 auto;
   padding: 20px;
   font-family: "Arial", sans-serif;
-
-  h1 {
-    color: darken($primaryColor, 10%);
-    font-size: 32px;
-    margin-bottom: 20px;
+  &-title {
+    text-align: center;
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    background-color: $primaryColor;
+    color: $whiteColor;
+    padding: 1.25rem;
+    border-radius: 5px;
   }
 
   section {
     margin-bottom: 30px;
-
-    h2 {
-      color: $secondaryColor;
-      font-size: 24px;
-      margin-bottom: 10px;
-    }
-
-    h3 {
-      font-size: 20px;
-      margin-bottom: 8px;
-      color: darken($primaryColor, 5%);
-    }
 
     .item-list {
       list-style: none;
@@ -50,8 +42,7 @@ $grayColor: #888;
           color: darken($thirdColor, 15%);
           text-transform: uppercase;
           font-size: 1rem;
-          margin-bottom: 2rem;
-          padding: 0 0 15px 0;
+          padding: 0 0 10px 0;
           border-bottom: 1px solid #e4e4e4;
           white-space: nowrap;
         }
