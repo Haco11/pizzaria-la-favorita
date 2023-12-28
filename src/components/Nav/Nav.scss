@@ -1,0 +1,36 @@
+$primaryColor: #3498db;
+
+.navbar {
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+  color: #fff;
+  .container {
+    max-width: 1200px; /* Set the maximum width */
+    margin: 0 auto; /* Center the container horizontally */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+
+    .logo {
+      span {
+        font-weight: bold;
+        font-size: 2.2em;
+      }
+    }
+
+    .contact-info {
+      span {
+        font-size: 1em;
+      }
+    }
+  }
+
+  &.scrolled {
+    background-color: $primaryColor; /* Change the background color when scrolling */
+  }
+}
