@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import "./Nav.scss";
 
 const Nav = () => {
@@ -21,7 +21,7 @@ const Nav = () => {
     <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
       <div className="container">
         <div className="logo">
-          <span>Company Name</span>
+          <span>La Favorita</span>
         </div>
         <div className="contact-info">
           <span>Telephone Nr</span>

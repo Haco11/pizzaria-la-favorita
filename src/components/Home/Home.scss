@@ -1,24 +1,23 @@
 $primaryColor: #3498db;
 
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap");
+
 .home {
-  position: relative;
-
-  .container {
-    position: relative;
-
-    img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
+  &--bg {
+    background-image: url("../../assets/pizza.png");
+    background-repeat: no-repeat;
+    background-size: 100% 80vh; // Set the desired height here
+    object-fit: center;
+    display: flex;
+    height: 80vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    aspect-ratio: 16/9;
     h2 {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
       color: #fff;
-      font-size: 10em;
+      font-size: calc(9rem);
       text-transform: uppercase;
       width: 100%;
       text-align: center;
@@ -26,15 +25,21 @@ $primaryColor: #3498db;
       span {
         color: $primaryColor;
       }
+      @media screen and (max-width: 1000px) {
+        font-size: 6em;
+      }
     }
+
     span.additional-text {
-      position: absolute;
-      top: 65%; // Adjust the vertical position as needed
-      left: 50%;
-      transform: translate(-50%, -50%);
       letter-spacing: 0.5rem;
       color: #fff;
-      font-size: 1.5em; // Adjust the font size as needed
+      font-size: 1.5em;
+      @media screen and (max-width: 1000px) {
+        font-size: 1.25em;
+      }
+    }
+    @media screen and (max-width: 1000px) {
+      background-size: cover; // Adjust as needed for smaller devices
     }
   }
 }
