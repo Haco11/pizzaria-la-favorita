@@ -1,7 +1,7 @@
 // Menu.scss
 
 $primaryColor: #3498db;
-$secondaryColor: #2ecc71;
+$secondaryColor: #3498db;
 $thirdColor: #121619;
 $whiteColor: #fff;
 $grayColor: #888;
@@ -77,7 +77,10 @@ $grayColor: #888;
       margin-right: 10px;
       cursor: pointer;
       border-radius: 5px;
-
+      &.active {
+        background-color: darken($primaryColor, 30%);
+        color: white;
+      }
       &:last-child {
         margin-right: 0;
       }

@@ -21,17 +21,37 @@ const Menu: React.FC = () => {
     <div className="menu">
       {/* Category buttons */}
       <div className="menu-filter">
-        <button onClick={() => handleCategoryChange("pizza")}>Pizzas</button>
-        <button onClick={() => handleCategoryChange("hamburgare")}>
+        <button
+          className={currentCategory === "pizza" ? "active" : ""}
+          onClick={() => handleCategoryChange("pizza")}>
+          Pizzas
+        </button>
+        <button
+          className={currentCategory === "hamburgare" ? "active" : ""}
+          onClick={() => handleCategoryChange("hamburgare")}>
           Hamburgare
         </button>
-        <button onClick={() => handleCategoryChange("sallad")}>Sallad</button>
-        <button onClick={() => handleCategoryChange("salladrull")}>
+        <button
+          className={currentCategory === "sallad" ? "active" : ""}
+          onClick={() => handleCategoryChange("sallad")}>
+          Sallad
+        </button>
+        <button
+          className={currentCategory === "salladrull" ? "active" : ""}
+          onClick={() => handleCategoryChange("salladrull")}>
           Salladrullar
         </button>
-        <button onClick={() => handleCategoryChange("pasta")}>Pasta</button>
-        <button onClick={() => handleCategoryChange("kebab")}>Kebab</button>
-        <button onClick={() => handleCategoryChange("")}>Alla</button>
+        <button
+          className={currentCategory === "pasta" ? "active" : ""}
+          onClick={() => handleCategoryChange("pasta")}>
+          Pasta
+        </button>
+        <button
+          className={currentCategory === "kebab" ? "active" : ""}
+          onClick={() => handleCategoryChange("kebab")}>
+          Kebab
+        </button>
+        <button onClick={() => handleCategoryChange("")}>Menu</button>
       </div>
 
       {/* Menu items */}
