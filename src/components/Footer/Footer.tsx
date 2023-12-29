@@ -1,5 +1,3 @@
-// Footer.jsx
-
 import "./Footer.scss";
 
 const Footer = () => {

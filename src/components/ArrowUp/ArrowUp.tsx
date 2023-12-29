@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import arrowUp from "../../assets/up-arrow.svg";
 import "./ArrowUp.scss";
 
