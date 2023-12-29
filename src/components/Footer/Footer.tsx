@@ -7,9 +7,8 @@ const Footer = () => {
         <div className="left">
           <div className="company-info">
             <h4>Pizzaria La Favorita</h4>
-            <p>Address: Your Address Here</p>
-            <p>Telephone: Your Telephone Number</p>
-            <p>Email: Your Email Address</p>
+            <p>Adress: Bäckvägen 104, Hägersten</p>
+            <p>Telefon: 08-645 30 40</p>
           </div>
         </div>
 
@@ -24,7 +23,7 @@ const Footer = () => {
         <div className="line"></div>
 
         <div className="copyright">
-          <p>© 2023 Pizzaria La Favorita. All rights reserved.</p>
+          <p>© 2023 Pizzaria La Favorita.</p>
         </div>
 
         <div className="social-links">

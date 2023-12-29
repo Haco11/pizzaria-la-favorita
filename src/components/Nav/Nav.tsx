@@ -24,7 +24,7 @@ const Nav = () => {
           <span>La Favorita</span>
         </div>
         <div className="contact-info">
-          <span>Telephone Nr</span>
+          <span>08-645 30 40</span>
         </div>
       </div>
     </nav>
