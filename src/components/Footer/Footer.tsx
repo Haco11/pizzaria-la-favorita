@@ -1,5 +1,6 @@
 import "./Footer.scss";
-
+import UberEats from "../../assets/uber.png";
+import Foodora from "../../assets/foodora.png";
 const Footer = () => {
   return (
     <footer className="footer">
@@ -21,13 +22,19 @@ const Footer = () => {
       </div>
       <div className="copyrgiht--contianer">
         <div className="line"></div>
+        <div className="copyrgiht--contianer--divide">
+          <div className="copyright">
+            <p>© 2023 Pizzaria La Favorita.</p>
+          </div>
 
-        <div className="copyright">
-          <p>© 2023 Pizzaria La Favorita.</p>
-        </div>
-
-        <div className="social-links">
-          {/* Add your social media icons/links here */}
+          <div className="social-links">
+            <a href="https://www.ubereats.com/se/store/pizzeria-la-favorita/JNb9aK5rToqB2ROMFY1WFA?diningMode=DELIVERY&pl=JTdCJTIyYWRkcmVzcyUyMiUzQSUyMlYlQzMlQTRzdGVydG9ycCUyMiUyQyUyMnJlZmVyZW5jZSUyMiUzQSUyMkNoSUo3XzQ4R0ZaMlgwWVJvVFZCMUp0VkYyRSUyMiUyQyUyMnJlZmVyZW5jZVR5cGUlMjIlM0ElMjJnb29nbGVfcGxhY2VzJTIyJTJDJTIybGF0aXR1ZGUlMjIlM0E1OS4yOTEyMTM3OTk5OTk5OSUyQyUyMmxvbmdpdHVkZSUyMiUzQTE3Ljk3MTI2NDMlN0Q%3D&utm_campaign=place-action-link&utm_medium=organic&utm_source=google">
+              <img src={UberEats} alt="" />
+            </a>
+            <a href="https://www.foodora.se/restaurant/v0bf/la-favorita-v0bf">
+              <img src={Foodora} alt="" />
+            </a>
+          </div>
         </div>
       </div>
     </footer>
