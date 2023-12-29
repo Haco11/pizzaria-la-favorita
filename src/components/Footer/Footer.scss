@@ -1,0 +1,69 @@
+// Footer.scss
+
+.footer {
+  background-color: #3498db;
+  color: #fff;
+  padding: 20px 0;
+
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+    .left,
+    .right {
+      width: 48%; //
+      margin-bottom: 20px;
+    }
+
+    .company-info {
+      h4 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-size: 0.85rem;
+        margin: 1rem 0;
+      }
+    }
+
+    .opening-hours {
+      h4 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+      }
+      text-align: center;
+    }
+  }
+
+  .copyrgiht--contianer {
+    padding: 1rem;
+
+    max-width: 1200px;
+    margin: auto;
+
+    .line {
+      margin: 10px 0;
+      height: 1px;
+      background-color: #000000;
+    }
+  }
+}
+
+// Media Query for smaller screens
+@media screen and (max-width: 768px) {
+  .footer .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer .footer-content .left,
+  .footer .footer-content .right .copyrgiht--contianer,
+  .copyright {
+    width: 100%;
+    text-align: center;
+  }
+}

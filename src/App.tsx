@@ -4,7 +4,7 @@ import Home from "./components/Home/Home";
 import Info from "./components/Info/Info";
 import Menu from "./components/Menu/Menu";
 import Nav from "./components/Nav/Nav";
-
+import Footer from "./components/Footer/Footer";
 function App() {
   return (
     <>
@@ -17,6 +17,9 @@ function App() {
         <ArrowUp />
         <Menu />
       </main>
+      <footer>
+        <Footer />
+      </footer>
     </>
   );
 }
