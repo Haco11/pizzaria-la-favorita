@@ -1,0 +1,39 @@
+.info {
+  background-color: #f2f2f2;
+
+  &--container {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    align-items: baseline;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    .cards {
+      text-align: center;
+      padding: 20px;
+      border-radius: 8px;
+      transition: transform 0.3s ease-in-out;
+      max-width: 500px;
+      &:hover {
+        transform: scale(1.05);
+      }
+
+      img {
+        width: 50px;
+      }
+
+      h3 {
+        color: #333;
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+      }
+
+      p {
+        color: #666;
+        font-size: 1rem;
+      }
+    }
+  }
+}

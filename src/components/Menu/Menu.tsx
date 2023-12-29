@@ -27,7 +27,7 @@ const Menu: React.FC = () => {
         </button>
         <button onClick={() => handleCategoryChange("sallad")}>Sallad</button>
         <button onClick={() => handleCategoryChange("salladrull")}>
-          Sallad Rulle
+          Salladrullar
         </button>
         <button onClick={() => handleCategoryChange("pasta")}>Pasta</button>
         <button onClick={() => handleCategoryChange("kebab")}>Kebab</button>
