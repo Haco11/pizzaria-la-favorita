@@ -38,6 +38,7 @@ $grayColor: #888;
       flex-wrap: wrap;
       justify-content: space-between;
       li {
+        min-width: 200px;
         padding: 10px 0 25px 0;
         margin-bottom: 5px;
         color: $grayColor;
