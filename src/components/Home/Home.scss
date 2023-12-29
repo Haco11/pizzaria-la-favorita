@@ -1,11 +1,12 @@
-$primaryColor: #3498db;
+$primaryColor: #009246; // Green
+$thirdColor: #ce2b37; // Red
 
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap");
 
 .home {
   &--bg {
     background-image: url("../../assets/Pizzabg.png");
-    background-size: 400px;
+    background-size: 400px; // Adjust as needed
     object-fit: center;
     display: flex;
     height: 70vh;
@@ -29,22 +30,20 @@ $primaryColor: #3498db;
         font-size: 2.5em;
       }
       span {
-        color: $primaryColor;
+        color: $primaryColor; // Green
       }
     }
 
     span.additional-text {
       z-index: 1;
       letter-spacing: 0.5rem;
-      color: $primaryColor;
+      color: $primaryColor; // Green
       text-transform: uppercase;
       font-size: 1.5em;
       font-weight: bolder;
-      text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
       text-align: center;
       @media screen and (max-width: 1000px) {
         letter-spacing: 0.1rem;
-
         font-size: 1.25em;
       }
       @media screen and (max-width: 480px) {

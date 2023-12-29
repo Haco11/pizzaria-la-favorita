@@ -1,10 +1,8 @@
-// Menu.scss
-
-$primaryColor: #3498db;
-$secondaryColor: #3498db;
-$thirdColor: #121619;
-$whiteColor: #fff;
-$grayColor: #888;
+$primaryColor: #009246; // Green
+$secondaryColor: #009246; // Green
+$thirdColor: #ce2b37; // Red
+$whiteColor: #ffffff; // White
+$grayColor: #888; // Gray
 
 .menu {
   max-width: 1200px;
@@ -72,7 +70,7 @@ $grayColor: #888;
 
     button {
       background-color: $primaryColor;
-      color: white;
+      color: $whiteColor;
       border: none;
       padding: 10px 15px;
       margin-right: 10px;
@@ -80,7 +78,7 @@ $grayColor: #888;
       border-radius: 5px;
       &.active {
         background-color: darken($primaryColor, 30%);
-        color: white;
+        color: $whiteColor;
       }
       &:last-child {
         margin-right: 0;

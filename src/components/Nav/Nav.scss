@@ -1,6 +1,12 @@
-$primaryColor: #3498db;
+$primaryColor: #009246; // Green
 $navbarTextLight: #fff;
-$navbarBackgroundLight: rgba(52, 152, 219, 0.8);
+
+$navbarBackgroundLight: rgba(
+  52,
+  152,
+  219,
+  0.8
+); // Retained the original color for background, but you can adjust as needed
 
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap");
 
