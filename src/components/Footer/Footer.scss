@@ -1,5 +1,3 @@
-// Footer.scss
-
 .footer {
   background-color: #3498db;
   color: #fff;
@@ -14,7 +12,7 @@
     padding: 1rem;
     .left,
     .right {
-      width: 48%; //
+      width: 48%;
       margin-bottom: 20px;
     }
 
@@ -53,7 +51,6 @@
   }
 }
 
-// Media Query for smaller screens
 @media screen and (max-width: 768px) {
   .footer .footer-content {
     flex-direction: column;

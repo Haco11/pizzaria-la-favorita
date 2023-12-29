@@ -1,11 +1,6 @@
 $primaryColor: #3498db;
-$navbarTextLight: #fff; // Light text color before scrolling
-$navbarBackgroundLight: rgba(
-  52,
-  152,
-  219,
-  0.8
-); // Light background color before scrolling
+$navbarTextLight: #fff;
+$navbarBackgroundLight: rgba(52, 152, 219, 0.8);
 
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap");
 
@@ -15,7 +10,7 @@ $navbarBackgroundLight: rgba(
   width: 100%;
   top: 0;
   transition: background-color 0.3s ease;
-  color: $primaryColor; // Light text color before scrolling
+  color: $primaryColor;
 
   .container {
     max-width: 1200px;
@@ -46,8 +41,8 @@ $navbarBackgroundLight: rgba(
   }
 
   &.scrolled {
-    background-color: $primaryColor; /* Change the background color when scrolling */
-    opacity: 1; /* Make the navbar fully opaque when scrolled */
-    color: $navbarTextLight; // Light text color before scrolling
+    background-color: $primaryColor;
+    opacity: 1;
+    color: $navbarTextLight;
   }
 }

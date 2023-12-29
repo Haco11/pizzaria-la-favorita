@@ -1,4 +1,3 @@
-import "./App.scss";
 import ArrowUp from "./components/ArrowUp/ArrowUp";
 import Home from "./components/Home/Home";
 import Info from "./components/Info/Info";

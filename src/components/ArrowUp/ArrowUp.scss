@@ -6,10 +6,10 @@ $primaryColor: #3498db;
   right: 20px;
   z-index: 2;
   transition: opacity 400ms ease;
-  opacity: 0; // Initially hidden
+  opacity: 0;
 
   &.show {
-    opacity: 1; // Visible when showArrow state is true
+    opacity: 1;
   }
 
   &--link {
