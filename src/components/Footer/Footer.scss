@@ -37,7 +37,7 @@ $blackColor: #000000; // Black
         font-size: 1.5rem;
         margin-bottom: 10px;
       }
-      text-align: center;
+      text-align: end;
     }
   }
 
@@ -79,6 +79,9 @@ $blackColor: #000000; // Black
   }
   .social-links {
     justify-content: center;
+  }
+  .opening-hours {
+    text-align: center !important;
   }
   .footer .footer-content .left,
   .footer .footer-content .right .copyrgiht--contianer,
