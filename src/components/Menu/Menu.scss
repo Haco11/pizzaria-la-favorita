@@ -13,12 +13,13 @@ $grayColor5: #808080; // Dark Gray
 
   &-title {
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     margin-bottom: 2rem;
     background-color: $primaryColor5; // Warm Mustard
     color: $thirdColor5; // Charcoal Gray text
     padding: 1.5rem;
     border-radius: 8px;
+    font-weight: bolder;
   }
 
   &-filter {
@@ -38,20 +39,18 @@ $grayColor5: #808080; // Dark Gray
       gap: 4rem;
       flex-wrap: wrap;
       justify-content: space-between;
-
       li {
         min-width: 200px;
         padding: 15px 0 25px 0;
         margin-bottom: 15px;
         color: $grayColor5;
-        font-size: 16px;
         flex: 1;
 
         .item-title {
           font-weight: bold;
           color: $thirdColor5;
           text-transform: uppercase;
-          font-size: 1.2rem;
+          font-size: 1.15rem;
           padding: 0 0 10px 0;
           border-bottom: 1px solid #e4e4e4;
           white-space: nowrap;

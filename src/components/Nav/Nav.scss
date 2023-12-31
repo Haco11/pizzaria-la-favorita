@@ -1,13 +1,10 @@
-$primaryColor: #009246; // Green
 $navbarTextLight: #fff;
-$thirdColor: #ce2b37; // Red
-
-$navbarBackgroundLight: rgba(
-  52,
-  152,
-  219,
-  0.8
-); // Retained the original color for background, but you can adjust as needed
+$navbarBackgroundTransparent: linear-gradient(
+  rgba(72, 72, 72, 0.8),
+  rgba(255, 255, 255, 0)
+); // Gradient background initially
+$navbarBackgroundScrolled: #333; // Dark background for the navbar when scrolled
+$thirdColor5: #a85b4e; // Brick Red
 
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap");
 
@@ -17,7 +14,8 @@ $navbarBackgroundLight: rgba(
   width: 100%;
   top: 0;
   transition: background-color 0.3s ease;
-  color: $primaryColor;
+  color: $navbarTextLight;
+  background: $navbarBackgroundTransparent; // Gradient background initially
 
   .container {
     max-width: 1200px;
@@ -27,6 +25,7 @@ $navbarBackgroundLight: rgba(
     align-items: center;
     padding: 15px;
     height: 100%;
+
     .logo {
       span {
         font-weight: bold;
@@ -43,11 +42,11 @@ $navbarBackgroundLight: rgba(
     .contact-info {
       display: flex;
       align-items: center;
-      gap: 1rem;
+      gap: 0.5rem;
       svg {
-        width: 20px;
-        height: 20px;
-        color: $navbarTextLight;
+        width: 22.5px;
+        height: 22.5px;
+        color: $thirdColor5;
       }
       span {
         font-size: 1.1em;
@@ -57,8 +56,7 @@ $navbarBackgroundLight: rgba(
 
   &.scrolled {
     height: 70px;
-    background-color: $primaryColor;
+    background-color: $navbarBackgroundScrolled; // Dark background when scrolled
     opacity: 1;
-    color: $navbarTextLight;
   }
 }
