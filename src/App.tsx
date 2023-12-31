@@ -4,6 +4,8 @@ import Info from "./components/Info/Info";
 import Menu from "./components/Menu/Menu";
 import Nav from "./components/Nav/Nav";
 import Footer from "./components/Footer/Footer";
+import { Analytics } from "@vercel/analytics/react";
+
 function App() {
   return (
     <>
@@ -19,6 +21,7 @@ function App() {
       <footer>
         <Footer />
       </footer>
+      <Analytics />
     </>
   );
 }
