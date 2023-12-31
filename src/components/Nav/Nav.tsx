@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import "./Nav.scss";
-
+import { FiPhone } from "react-icons/fi";
 const Nav = () => {
   const [scrolled, setScrolled] = useState(false);
 
@@ -24,6 +24,7 @@ const Nav = () => {
           <span>La Favorita</span>
         </div>
         <div className="contact-info">
+          <FiPhone />
           <span>08-645 30 40</span>
         </div>
       </div>

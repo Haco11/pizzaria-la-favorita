@@ -1,5 +1,6 @@
 $primaryColor: #009246; // Green
 $navbarTextLight: #fff;
+$thirdColor: #ce2b37; // Red
 
 $navbarBackgroundLight: rgba(
   52,
@@ -25,7 +26,7 @@ $navbarBackgroundLight: rgba(
     justify-content: space-between;
     align-items: center;
     padding: 15px;
-
+    height: 100%;
     .logo {
       span {
         font-weight: bold;
@@ -40,13 +41,22 @@ $navbarBackgroundLight: rgba(
     }
 
     .contact-info {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      svg {
+        width: 20px;
+        height: 20px;
+        color: $navbarTextLight;
+      }
       span {
-        font-size: 1em;
+        font-size: 1.1em;
       }
     }
   }
 
   &.scrolled {
+    height: 70px;
     background-color: $primaryColor;
     opacity: 1;
     color: $navbarTextLight;
