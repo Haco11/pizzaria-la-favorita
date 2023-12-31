@@ -1,23 +1,26 @@
-$primaryColor: #009246; // Green
-$secondaryColor: #009246; // Green
-$thirdColor: #ce2b37; // Red
-$whiteColor: #ffffff; // White
-$grayColor: #888; // Gray
+// Color Palette 5
+$primaryColor5: #ffe8a8; // Mustard
+$secondaryColor5: #5d5d5a; // Charcoal Gray
+$thirdColor5: #a85b4e; // Brick Red
+$whiteColor5: #f7f7f7; // Off White
+$grayColor5: #808080; // Dark Gray
 
 .menu {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
   font-family: "Arial", sans-serif;
+
   &-title {
     text-align: center;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     margin-bottom: 2rem;
-    background-color: $primaryColor;
-    color: $whiteColor;
-    padding: 1.25rem;
-    border-radius: 5px;
+    background-color: $primaryColor5; // Warm Mustard
+    color: $thirdColor5; // Charcoal Gray text
+    padding: 1.5rem;
+    border-radius: 8px;
   }
+
   &-filter {
     display: flex;
     padding: 1rem;
@@ -25,41 +28,44 @@ $grayColor: #888; // Gray
     flex-wrap: wrap;
     gap: 1rem;
   }
+
   section {
     margin-bottom: 30px;
 
     .item-list {
       list-style: none;
-
       display: flex;
       gap: 4rem;
       flex-wrap: wrap;
       justify-content: space-between;
+
       li {
         min-width: 200px;
-        padding: 10px 0 25px 0;
-        margin-bottom: 5px;
-        color: $grayColor;
+        padding: 15px 0 25px 0;
+        margin-bottom: 15px;
+        color: $grayColor5;
         font-size: 16px;
         flex: 1;
+
         .item-title {
           font-weight: bold;
-          color: darken($thirdColor, 15%);
+          color: $thirdColor5;
           text-transform: uppercase;
-          font-size: 1rem;
+          font-size: 1.2rem;
           padding: 0 0 10px 0;
           border-bottom: 1px solid #e4e4e4;
           white-space: nowrap;
         }
 
         .item-ingredients {
-          color: $grayColor;
-          font-size: 0.85rem;
-          max-width: 110px;
+          color: $grayColor5;
+          font-size: 1rem;
+          max-width: 150px;
         }
+
         .burger-ingredients {
-          color: $grayColor;
-          font-size: 0.85rem;
+          color: $grayColor5;
+          font-size: 1rem;
         }
       }
     }
@@ -69,23 +75,24 @@ $grayColor: #888; // Gray
     margin-bottom: 20px;
 
     button {
-      background-color: $primaryColor;
-      color: $whiteColor;
+      background-color: $thirdColor5; // Brick Red for buttons
+      color: $whiteColor5;
       border: none;
-      padding: 10px 15px;
+      padding: 12px 20px;
       margin-right: 10px;
       cursor: pointer;
-      border-radius: 5px;
+      border-radius: 8px;
+
       &.active {
-        background-color: darken($primaryColor, 30%);
-        color: $whiteColor;
+        background-color: darken($thirdColor5, 20%);
       }
+
       &:last-child {
         margin-right: 0;
       }
 
       &:hover {
-        background-color: darken($primaryColor, 10%);
+        background-color: darken($thirdColor5, 10%);
       }
     }
   }

@@ -14,6 +14,7 @@ $thirdColor: #ce2b37; // Red
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    position: relative;
 
     h2 {
       z-index: 1;
@@ -23,12 +24,15 @@ $thirdColor: #ce2b37; // Red
       width: 100%;
       text-align: center;
       font-family: "PT Sans Narrow", sans-serif;
+
       @media screen and (max-width: 1000px) {
         font-size: 6em;
       }
+
       @media screen and (max-width: 480px) {
         font-size: 2.5em;
       }
+
       span {
         color: $primaryColor; // Green
       }
@@ -42,10 +46,12 @@ $thirdColor: #ce2b37; // Red
       font-size: 1.5em;
       font-weight: bolder;
       text-align: center;
+
       @media screen and (max-width: 1000px) {
         letter-spacing: 0.1rem;
         font-size: 1.25em;
       }
+
       @media screen and (max-width: 480px) {
         font-size: 1em;
       }
@@ -59,7 +65,7 @@ $thirdColor: #ce2b37; // Red
       left: 0;
       width: 100%;
       height: 70vh;
-      background-color: rgba(0, 0, 0, 0.5);
+      background-color: rgba(0, 0, 0, 0.5); // don't change
     }
   }
 }
