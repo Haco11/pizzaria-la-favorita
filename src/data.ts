@@ -398,7 +398,13 @@ const data: MenuData = {
       },
       {
         title: "Havets Pärlor",
-        ingredients: ["Räkor", "Görna musslor", "Vitlök", "Scampi", "Basilika"],
+        ingredients: [
+          "Räkor",
+          "Gröna * musslor",
+          "Vitlök",
+          "Scampi",
+          "Basilika",
+        ],
       },
       {
         title: "Avokado pizza",
