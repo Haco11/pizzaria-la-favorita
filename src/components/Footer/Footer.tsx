@@ -15,8 +15,9 @@ const Footer = () => {
 
         <div className="right">
           <div className="opening-hours">
-            <h4>Öppeningstider</h4>
-            <p>Alla dagar: 10:00 - 21:00</p>
+            <h4>Öppettider</h4>
+            <p>Mån-fre: 10:00 - 21:00</p>
+            <p>Lör-sön: 11:00 - 21:00</p>
           </div>
         </div>
       </div>
