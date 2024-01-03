@@ -127,28 +127,6 @@ const data: MenuData = {
       },
     ],
   },
-  pizzaamerika: {
-    title: "Amerikanska pan pizzor - 139:- M 229:- L 299:-",
-
-    pizzas: [
-      {
-        title: "Honululu",
-        ingredients: ["Oxfile", "Champinjoner", "Lök", "Tomater, Bearnaisesås"],
-      },
-      {
-        title: "Miami",
-        ingredients: ["Kyckling", "Banan", "Curry", "Ananas"],
-      },
-      {
-        title: "Kansas",
-        ingredients: ["Skinka", "Bacon", "Salami", "Tomater", "Lök", "Paprika"],
-      },
-      {
-        title: "Los Angeles",
-        ingredients: ["Pepperonikorv", "Lök", "Paprika", "Oliver", "Tomat"],
-      },
-    ],
-  },
   pizzaclass3: {
     title: "Prisklass 3 - 129:- M 219:- L 289:-",
 
@@ -159,7 +137,7 @@ const data: MenuData = {
       },
       {
         title: "La Mira",
-        ingredients: ["Skinka", "Räkor", "Banan", "Lök"],
+        ingredients: ["Skinka", "Räkor", "Banan", "curry"],
       },
       {
         title: "Vegetariana",
@@ -215,7 +193,7 @@ const data: MenuData = {
       },
       {
         title: "Zolti",
-        ingredients: ["Skinka", "Bacon", "Champinjoner", "Lök", "Paprika"],
+        ingredients: ["Salami", "Bacon", "Champinjoner", "Lök", "Paprika"],
       },
       {
         title: "La Favorita",
@@ -298,12 +276,7 @@ const data: MenuData = {
       },
       {
         title: "Tefat",
-        ingredients: [
-          "(inbakad, dubbeldeg) Skinka",
-          "Räkor",
-          "Riven ost",
-          "Ruccola",
-        ],
+        ingredients: ["(inbakad, dubbeldeg) Skinka", "Räkor", "Champinjoner"],
       },
       {
         title: "Italiano",
@@ -383,7 +356,7 @@ const data: MenuData = {
       },
       {
         title: "Husets Special",
-        ingredients: ["Oxfile", "Tomater", "Feferoni", "Bearnaisesås", "Lök"],
+        ingredients: ["Oxfile", "Champinjoner", "Sparris", "Bearnaisesås"],
       },
       {
         title: "Oxfile",
@@ -402,16 +375,17 @@ const data: MenuData = {
       {
         title: "Belladona",
         ingredients: [
+          "Fläskfilé",
           "Tomater",
           "Champinjoner",
           "Lök",
-          "Qournfärs",
+          "Vitlök",
           "Bearnaisesås",
         ],
       },
       {
         title: "Quattro Formaggi",
-        ingredients: ["Mozzarella", "Fårost", "Gorgonzola", "Basillika"],
+        ingredients: ["Mozzarella", "Fårost", "Gorgonzola", "Basilika"],
       },
       {
         title: "Ubåt Special",
@@ -424,13 +398,7 @@ const data: MenuData = {
       },
       {
         title: "Havets Pärlor",
-        ingredients: [
-          "Champinjoner",
-          "Görna musslor",
-          "Räkor",
-          "Vitlök",
-          "Basillika",
-        ],
+        ingredients: ["Räkor", "Görna musslor", "Vitlök", "Scampi", "Basilika"],
       },
       {
         title: "Avokado pizza",
@@ -440,8 +408,8 @@ const data: MenuData = {
           "Paprika",
           "Vitlök",
           "Tomater",
-          "Basillika",
-          "Sparis",
+          "Basilika",
+          "Sparris",
         ],
       },
     ],
@@ -511,6 +479,28 @@ const data: MenuData = {
       },
     ],
   },
+  pizzaamerika: {
+    title: "Amerikanska pan pizzor - 139:- M 229:- L 299:-",
+
+    pizzas: [
+      {
+        title: "Honululu",
+        ingredients: ["Oxfile", "Champinjoner", "Lök", "Tomater, Bearnaisesås"],
+      },
+      {
+        title: "Miami",
+        ingredients: ["Kyckling", "Banan", "Curry", "Ananas"],
+      },
+      {
+        title: "Kansas",
+        ingredients: ["Skinka", "Bacon", "Salami", "Tomater", "Lök", "Paprika"],
+      },
+      {
+        title: "Los Angeles",
+        ingredients: ["Pepperonikorv", "Lök", "Paprika", "Oliver", "Tomat"],
+      },
+    ],
+  },
   hamburgare: {
     title: "Hamburgare",
 
@@ -537,15 +527,7 @@ const data: MenuData = {
     sallader: [
       {
         title: "Västkustsallad",
-        ingredients: [
-          "Ost",
-          "Räkor",
-          "Tonfisk",
-          "Musslor",
-          "Tonfisk",
-          "Majs",
-          "Citron",
-        ],
+        ingredients: ["Ost", "Räkor", "Tonfisk", "Musslor", "Majs", "Citron"],
       },
       {
         title: "Tonfisksallad",
@@ -609,7 +591,13 @@ const data: MenuData = {
       },
       {
         title: "Kebabsallad",
-        ingredients: ["Kebabkött", "Ost", "Feferoni", "Vitlökssås & rödsås"],
+        ingredients: [
+          "Kebabkött",
+          "Ost",
+          "Feferoni",
+          "Lök",
+          "Vitlökssås & rödsås",
+        ],
       },
       {
         title: "Falafelsallad",
@@ -659,14 +647,7 @@ const data: MenuData = {
       },
       {
         title: "Pasta Carbonara",
-        ingredients: [
-          "Bacon",
-          "Lök",
-          "Äggula",
-          "Parmesan",
-          "Grädde",
-          "Champinjoner",
-        ],
+        ingredients: ["Bacon", "Lök", "Äggula", "Parmesan", "Grädde"],
       },
       {
         title: "Kycklingpasta",
@@ -680,7 +661,13 @@ const data: MenuData = {
       },
       {
         title: "Oxfilépasta",
-        ingredients: ["Oxfilé", "Champinjoner", "Purjolök", "Paprika"],
+        ingredients: [
+          "Oxfilé",
+          "Champinjoner",
+          "Purjolök",
+          "Paprika",
+          "Grädde",
+        ],
       },
     ],
   },
@@ -720,8 +707,7 @@ const data: MenuData = {
           "Rödlök",
           "Tomater",
           "Isbergssallad",
-          "Gurka",
-          "Pepperoni",
+          "Feferoni",
           "Vitlöksås & rödsås",
           "(grönsaker tillsätts efter gräddning)",
         ],
@@ -735,7 +721,7 @@ const data: MenuData = {
           "Tomater",
           "Isbergssallad",
           "Gurka",
-          "Pepperoni",
+          "Feferoni",
           "Vitlöksås & rödsås",
           "(grönsaker tillsätts efter gräddning)",
         ],
