@@ -45,7 +45,7 @@ export interface MenuData {
 }
 const data: MenuData = {
   pizzaclass1: {
-    title: "Prisklass 1 - 109:-  M 188:- L 262:-",
+    title: "Prisklass 1 - 114:-  M 208:- L 302:-",
     pizzas: [
       {
         title: "Vesuvio",
@@ -62,8 +62,7 @@ const data: MenuData = {
     ],
   },
   pizzaclass2: {
-    title: "Prisklass 2 - 119:- M 209:- L 279:-",
-
+    title: "Prisklass 2 - 127:- M 234:- L 317:-",
     pizzas: [
       {
         title: "Räkpizza",
@@ -128,8 +127,7 @@ const data: MenuData = {
     ],
   },
   pizzaclass3: {
-    title: "Prisklass 3 - 129:- M 219:- L 289:-",
-
+    title: "Prisklass 3 - 137:- M 254:- L 371:-",
     pizzas: [
       {
         title: "Primavera",
@@ -240,8 +238,7 @@ const data: MenuData = {
     ],
   },
   pizzaclass4: {
-    title: "Prisklass 4 - 139:- M 229:- L 299:-",
-
+    title: "Prisklass 4 - 147:- M 274:- L 391:-",
     pizzas: [
       {
         title: "Le Chef",
@@ -421,8 +418,7 @@ const data: MenuData = {
     ],
   },
   pizzaMexikan: {
-    title: "Mexikansk pizza - 139:-",
-
+    title: "Mexikansk pizza - 147:-",
     pizzas: [
       {
         title: "Acapulco",
@@ -486,8 +482,7 @@ const data: MenuData = {
     ],
   },
   pizzaamerika: {
-    title: "Amerikanska pan pizzor - 139:- M 229:- L 299:-",
-
+    title: "Amerikanska pan pizzor - 147:- M 274:- L 391:-",
     pizzas: [
       {
         title: "Honululu",
@@ -507,29 +502,9 @@ const data: MenuData = {
       },
     ],
   },
-  hamburgare: {
-    title: "Hamburgare",
 
-    hamburgare: [
-      {
-        title: "Hambugare 90 gr",
-        price: {
-          menu: 95,
-          noMenu: 70,
-        },
-      },
-      {
-        title: "Hamburgare 150 gr",
-        price: {
-          menu: 119,
-          noMenu: 90,
-        },
-      },
-    ],
-  },
   sallad: {
-    title: "Sallader - 129:-",
-
+    title: "Sallader - 137:-",
     sallader: [
       {
         title: "Västkustsallad",
@@ -618,7 +593,7 @@ const data: MenuData = {
     ],
   },
   salladrull: {
-    title: "Salladrullar - 129:-",
+    title: "Salladrullar - 137:-",
 
     salladrullar: [
       {
@@ -640,7 +615,7 @@ const data: MenuData = {
     ],
   },
   pasta: {
-    title: "Pasta - 129:-",
+    title: "Pasta - 137:-",
 
     pastas: [
       {
@@ -684,27 +659,27 @@ const data: MenuData = {
       {
         title: "Kebab Pizza",
         ingredients: ["Kebabkött", "Lök", "Feferoni", "Tomater"],
-        price: 129,
+        price: 137,
       },
       {
         title: "Kebab eller Falafel med bröd",
         ingredients: [""],
-        price: 95,
+        price: 99,
       },
       {
         title: "Kebab eller Falafelrulle",
         ingredients: [""],
-        price: 119,
+        price: 127,
       },
       {
         title: "Kebab eller Falafeltallrik",
         ingredients: ["Med ris eller pommes"],
-        price: 129,
+        price: 137,
       },
       {
         title: "Kebab Alexander",
         ingredients: [""],
-        price: 129,
+        price: 137,
       },
       {
         title: "Viking kebab",
@@ -717,7 +692,7 @@ const data: MenuData = {
           "Vitlöksås & rödsås",
           "(grönsaker tillsätts efter gräddning)",
         ],
-        price: 139,
+        price: 147,
       },
       {
         title: "Del Solo",
@@ -731,7 +706,7 @@ const data: MenuData = {
           "Vitlöksås & rödsås",
           "(grönsaker tillsätts efter gräddning)",
         ],
-        price: 139,
+        price: 147,
       },
       {
         title: "Kebab pizza special",
@@ -746,7 +721,7 @@ const data: MenuData = {
           "Vitlöksås & rödsås",
           "(grönsaker tillsätts efter gräddning)",
         ],
-        price: 149,
+        price: 159,
       },
     ],
   },
