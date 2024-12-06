@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import data, {
   MenuData,
   Pizza,
-  Burger,
   Salad,
   SalladRoll,
   Pasta,

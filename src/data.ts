@@ -36,7 +36,6 @@ export interface MenuData {
   [key: string]: {
     title: string;
     pizzas?: Pizza[];
-    hamburgare?: Burger[];
     sallader?: Salad[];
     salladrullar?: SalladRoll[];
     pastas?: Pasta[];
