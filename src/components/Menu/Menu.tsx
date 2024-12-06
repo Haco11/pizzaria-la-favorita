@@ -26,11 +26,7 @@ const Menu: React.FC = () => {
           onClick={() => handleCategoryChange("pizza")}>
           Pizzas
         </button>
-        <button
-          className={currentCategory === "hamburgare" ? "active" : ""}
-          onClick={() => handleCategoryChange("hamburgare")}>
-          Hamburgare
-        </button>
+
         <button
           className={currentCategory === "sallad" ? "active" : ""}
           onClick={() => handleCategoryChange("sallad")}>
