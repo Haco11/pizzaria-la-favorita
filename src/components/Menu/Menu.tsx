@@ -81,19 +81,6 @@ const Menu: React.FC = () => {
                   </ul>
                 </div>
               )}
-              {category.hamburgare && category.hamburgare.length > 0 && (
-                <ul className="item-list">
-                  {category.hamburgare?.map((burger: Burger, index: number) => (
-                    <li key={index}>
-                      <div className="item-title">{burger.title}</div>
-                      <div className="burger-ingredients">
-                        Meny: {burger.price.menu}:-, Bröd: {burger.price.noMenu}
-                        :-
-                      </div>
-                    </li>
-                  ))}
-                </ul>
-              )}
               {category.sallader && category.sallader.length > 0 && (
                 <ul className="item-list">
                   {category.sallader?.map((salad: Salad, index: number) => (
